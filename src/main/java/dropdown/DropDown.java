@@ -1,6 +1,8 @@
 
 package dropdown;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -34,10 +36,14 @@ public class DropDown extends CommonFunction {
 		
 		//4.no of the option
 		WebElement numopt= driver.findElement(By.xpath("//*[@id=\"contentblock\"]/section/div[4]/select"));
-		String ptn= numopt.getText();
-		
-		System.out.println("No.of.Option are:"+ptn.length());
+		List<WebElement> ptn= numopt.findElements(By.tagName("option"));
+		System.out.println("No.of.Option are:"+ptn.size());
+	
+		//5.sending txt in option
+		WebElement sendingTxt= driver.findElement(By.xpath("//*[@id='contentblock']/section/div[5]/select"));
+		sendingTxt.sendKeys("Loadrunner");
+
 	}
 
-	
+	 
 }
