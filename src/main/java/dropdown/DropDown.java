@@ -42,7 +42,11 @@ public class DropDown extends CommonFunction {
 		//5.sending txt in option
 		WebElement sendingTxt= driver.findElement(By.xpath("//*[@id='contentblock']/section/div[5]/select"));
 		sendingTxt.sendKeys("Loadrunner");
-
+    
+		//select a pgm
+		WebElement sel = driver.findElement(By.xpath("//*[@id=\"contentblock\"]/section/div[6]/select"));
+		Select select4 = new Select(sel);
+		select4.selectByVisibleText("Selenium");
 	}
 
 	 
