@@ -2,10 +2,7 @@ package Dragable;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.interactions.Mouse;
-import org.openqa.selenium.interactions.internal.MouseAction;
 import org.testng.annotations.Test;
 
 import commonfunction.CommonFunction;
