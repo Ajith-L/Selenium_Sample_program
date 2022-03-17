@@ -38,8 +38,8 @@ public class AlertButton extends CommonFunction {
 	    driver.switchTo().alert().accept();
 	    
 	    //5.Click the below button and click OK.
-	    WebElement BelowBtn = driver.findElement(By.xpath("//*[@id='contentblock']/section/div[5]/div/div/button"));
-	    BelowBtn.click();
+	    WebElement BelowBtns = driver.findElement(By.xpath("//*[@id='contentblock']/section/div[5]/div/div/button"));
+	    BelowBtns.click();
 	     driver.switchTo().alert().accept();
 	}
 
